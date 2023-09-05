@@ -1,0 +1,37 @@
+.cardContainer {
+  color: #0c0c0c;
+  margin: 2rem auto;
+  font-family: "Montserrat";
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  align-items: center;
+  width: 90%;
+}
+.cardContainer .cardIcon {
+  height: 50px;
+  width: 50px;
+  background-color: #0c0c0c;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+}
+.cardContainer .cardInfo {
+  width: 90%;
+}
+.cardContainer .cardInfo .cardTitle {
+  margin: 0.75rem auto;
+  font-weight: 300;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  text-align: left;
+}
+.cardContainer .cardInfo hr {
+  height: 3px;
+  width: 125px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0c0c0c;
+}
+.cardContainer .cardInfo .cardText {
+  font-family: "EB Garamond";
+}/*# sourceMappingURL=offerCard.module.css.map */

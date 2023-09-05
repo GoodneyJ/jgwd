@@ -1,0 +1,113 @@
+.navigationContainer .navigationBar {
+  position: relative;
+  z-index: 1500;
+  background-color: #0c0c0c;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 3px 5px 21px 8px #000000;
+  transition: all 0.2s ease;
+}
+.navigationContainer .navigationBar .logo {
+  border: 2px solid white;
+  padding: 0rem 1rem;
+  letter-spacing: 5px;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+.navigationContainer .navigationBar .logo:hover {
+  background-color: #d4af37;
+  color: #fff;
+}
+.navigationContainer .navigationBar .menuBtnContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border: 3px solid #fff;
+}
+.navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease;
+}
+.navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger::before, .navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease;
+}
+.navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger::before {
+  transform: translateY(-10px);
+}
+.navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger::after {
+  transform: translateY(10px);
+}
+.navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger .menuControl:checked {
+  display: flex;
+}
+.navigationContainer .sidebar {
+  transform: translateX(320px);
+  z-index: 1000;
+  height: 100vh;
+  width: 320px;
+  position: absolute;
+  background-color: #0c0c0c;
+  color: #fff;
+  display: flex;
+  top: 45px;
+  right: 0px;
+  transition: all 0.3s ease;
+}
+.navigationContainer .sidebar .sidebarMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.navigationContainer .sidebar .sidebarMenu a {
+  margin: 3rem auto;
+  font-size: 2rem;
+  transition: all 0.2s ease;
+}
+.navigationContainer .sidebar .sidebarMenu a:hover {
+  cursor: pointer;
+  color: #daa520;
+}
+.navigationContainer .sidebar .sidebarMenu a:hover::after {
+  content: "";
+  background-color: #daa520;
+  height: 3px;
+  width: 35px;
+  display: block;
+}
+.navigationContainer .sidebar.display {
+  display: flex;
+  transform: translateX(0px);
+}
+
+.navigationBar .menuBtnContainer.open .menuBtnBurger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+.navigationBar .menuBtnContainer.open .menuBtnBurger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.navigationBar .menuBtnContainer.open .menuBtnBurger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}/*# sourceMappingURL=navigation.module.css.map */

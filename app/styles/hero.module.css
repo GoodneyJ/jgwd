@@ -1,0 +1,54 @@
+.heroContainer {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../../public/annap.jpg");
+  background-size: cover;
+  height: 95vh;
+  width: 100%;
+}
+.heroContainer .heroContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: translateY(250px);
+}
+.heroContainer .heroContent h1, .heroContainer .heroContent p {
+  text-shadow: 0 0 29px rgba(0, 0, 0, 0.96);
+}
+.heroContainer .heroContent h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 3.5rem;
+  margin: 0 auto;
+  font-weight: 600;
+}
+.heroContainer .heroContent p {
+  font-family: "EB Garamond";
+  font-size: 1.45rem;
+  width: 65%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 1.5rem 0;
+}
+.heroContainer .heroContent .spanDev {
+  font-weight: 800;
+}
+.heroContainer .heroContent .buttonRow {
+  font-family: "Montserrat";
+}
+.heroContainer .heroContent .buttonRow button {
+  font-weight: 100;
+  background-color: #e9e9e9;
+  border: none;
+  height: 40px;
+  width: 125px;
+  margin: 1.5rem 1rem;
+  font-size: 1.25rem;
+  color: black;
+  box-shadow: 3px 2px 3px 2px #000000;
+  transition: 0.2s all;
+}
+.heroContainer .heroContent .buttonRow button:hover {
+  background-color: #d4af37;
+  color: #01414e;
+  cursor: pointer;
+}/*# sourceMappingURL=hero.module.css.map */

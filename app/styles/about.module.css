@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;600;800&family=Montserrat:wght@200;300;400;800;900&display=swap");
+.aboutContainer {
+  width: 100%;
+  height: 1500px;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+}
+.aboutContainer .liveText {
+  height: 150px;
+  width: 90%;
+  margin: 0 auto;
+  transform: translateY(-75px);
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 3px 5px 21px 8px rgba(0, 0, 0, 0.3568627451);
+  color: #0c0c0c;
+}
+.aboutContainer .subHeading {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #daa520;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0.25rem auto;
+  letter-spacing: -1px;
+}
+.aboutContainer .heading {
+  text-align: center;
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #0c0c0c;
+}
+.aboutContainer .offerBtn {
+  background: #daa520;
+  border: none;
+  width: 150px;
+  height: 40px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  color: #fff;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+}
+.aboutContainer .offerBtn:hover {
+  cursor: pointer;
+}
+.aboutContainer .offerBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.aboutContainer .offerBlock .offerRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}/*# sourceMappingURL=about.module.css.map */
