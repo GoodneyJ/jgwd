@@ -31,10 +31,14 @@ export default function About() {
         </div>
 
         {/* Pricing Block */}
+        <h4 className={styles.pricingSubheading}>Pricing</h4>
         <div className={styles.pricingBlock}>
-
+            <div className={styles.priceItem}></div>
+            <div className={styles.priceItem}></div>
         </div>
         
+        <h4 className={styles.reviewHeading}> Heres a few words from business owners like you </h4>
+        {/* Font awesome down arrow here please */}
     </div>
   )
 }

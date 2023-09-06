@@ -9,6 +9,9 @@
   padding: 1rem;
   box-shadow: 3px 5px 21px 8px #000000;
   transition: all 0.2s ease;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 .navigationContainer .navigationBar .logo {
   border: 2px solid white;
@@ -20,6 +23,14 @@
 .navigationContainer .navigationBar .logo:hover {
   background-color: #d4af37;
   color: #fff;
+}
+.navigationContainer .navigationBar .spacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigationContainer .navigationBar .spacer .navIcon {
+  width: 50px;
 }
 .navigationContainer .navigationBar .menuBtnContainer {
   position: relative;
@@ -64,11 +75,10 @@
   z-index: 1000;
   height: 100vh;
   width: 320px;
-  position: absolute;
+  position: fixed;
   background-color: #0c0c0c;
   color: #fff;
   display: flex;
-  top: 45px;
   right: 0px;
   transition: all 0.3s ease;
 }
@@ -78,6 +88,10 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+.navigationContainer .sidebar .sidebarMenu h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 .navigationContainer .sidebar .sidebarMenu a {
   margin: 3rem auto;

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;600;800&family=Montserrat:wght@200;300;400;800;900&display=swap');
 .aboutContainer {
     width: 100%;
-    height: 1500px;
+    height: 1900px;
     display: flex;
     background-color: #ffffff;
     flex-direction: column;
@@ -40,11 +40,11 @@
     }
 
     .offerBtn {
-        background: #daa520;
-
+        background-image: linear-gradient(to left, #ffc312 ,#daa520, #ffc312);
+        background-size: 200%;
         border: none;
-        width: 150px;
-        height: 40px;
+        width: 220px;
+        height: 45px;
         margin: 1.5rem auto;
         padding: 0 1rem;
         color: #fff;
@@ -52,10 +52,11 @@
         font-weight: 600;
         text-transform: uppercase;
         transition: all .2s ease-in-out;
+        box-shadow: 0px 3px 11px 3px #0000005b;
         &:hover {
             cursor: pointer;
-
-
+            background-position: right;
+            
         }
     }
 
@@ -65,12 +66,46 @@
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
-        justify-content: center;
+
         .offerRow {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+
+            margin: 0 auto;
+            justify-content: space-evenly;
             
         }
+    }
+
+
+    .pricingSubheading {
+        font-family: "Montserrat";
+        text-align: center;
+        color: #daa520;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin: .25rem auto;
+        letter-spacing: -1px;
+
+    }
+    .pricingBlock {
+        .priceItem {
+            background-color: #0c0c0c;
+            height: 350px;
+            width: 55%;
+            margin: 2rem auto;
+        }
+    }
+
+    .reviewHeading {
+        font-family: "Montserrat";
+        text-align: center;
+        color: #daa520;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin: .25rem auto;
+        letter-spacing: -1px;
+        width: 80%;
     }
 }

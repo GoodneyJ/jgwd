@@ -3,7 +3,8 @@
   margin: 2rem auto;
   font-family: "Montserrat";
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   border-radius: 3px;
   align-items: center;
   width: 90%;
@@ -23,7 +24,7 @@
   font-weight: 300;
   font-size: 0.85rem;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
 }
 .cardContainer .cardInfo hr {
   height: 3px;
@@ -31,7 +32,10 @@
   border-radius: 5px;
   border: none;
   background-color: #0c0c0c;
+  margin: 0 auto;
 }
 .cardContainer .cardInfo .cardText {
   font-family: "EB Garamond";
+  width: 75%;
+  margin: 0.25rem auto;
 }/*# sourceMappingURL=offerCard.module.css.map */
