@@ -23,14 +23,15 @@
         width: 100%;
 
         .logo {
-            border: 2px solid white;
+            border: 2px solid #fff;
             padding: 0rem 1rem;;
             letter-spacing: 5px;
             cursor: pointer;
             transition: .2s all ease;
             &:hover {
-                background-color: #d4af37;
-                color: #fff;
+                color: #f8bc24;
+                border: 2px solid #f8bc24;
+
             }
         }
 
@@ -40,7 +41,14 @@
             align-items: center;
 
             .navIcon { 
-                width: 50px;
+                width: 75px;
+                font-size: 2rem;
+                transition: 0.2s all ease;
+                &:hover {
+                    cursor: pointer;
+                    color: #ffc123;
+                    filter: drop-shadow(0px 0px 10px #daa520);
+                }
             }
         }
     
@@ -52,7 +60,7 @@
             width: 40px;
             height: 40px;
             cursor: pointer;
-            transition: all .5s ease;
+            transition: all .2s ease;
             border: 3px solid #fff;
     
             .menuBtnBurger {
@@ -82,16 +90,27 @@
                     transform: translateY(10px);
                 }
 
+                &:hover {
+                    
+                    background-color: #ffc123;
+
+                    &::before, &::after {
+                        background-color: #ffc123;
+
+                    } 
+                }
+
                 .menuControl {
-
-
-          
-
                     &:checked {
                         display: flex;
                     }
                 }
     
+            }
+
+            &:hover {
+                cursor: pointer;
+                border: 3px solid #ffc123;
             }
     
     
