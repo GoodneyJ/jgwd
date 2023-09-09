@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;600;800&family=Montserrat:wght@200;300;400;800;900&display=swap");
+/* animations */
+@keyframes typewriter {
+  0% {
+    width: 0em;
+  }
+  35% {
+    width: 12em;
+  }
+  100% {
+    width: 0em;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: #0c0c0c;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
 .aboutContainer {
   width: 100%;
   height: 1900px;
@@ -6,7 +26,7 @@
   background-color: #ffffff;
   flex-direction: column;
 }
-.aboutContainer .liveText {
+.aboutContainer .liveTextContainer {
   height: 150px;
   width: 90%;
   margin: 0 auto;
@@ -15,6 +35,22 @@
   background-color: #fff;
   box-shadow: 3px 5px 21px 8px rgba(0, 0, 0, 0.3568627451);
   color: #0c0c0c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutContainer .liveTextContainer .line {
+  width: 12em;
+  margin: 0 auto;
+  border-right: 2px solid #0c0c0c;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.aboutContainer .liveTextContainer .animTypewriter {
+  animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 500ms steps(40) infinite normal, typewriter 4s steps(40) 1s 1 reverse both;
+  animation-iteration-count: infinite;
 }
 .aboutContainer .subHeading {
   font-family: "Montserrat";
