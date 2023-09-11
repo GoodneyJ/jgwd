@@ -96,7 +96,6 @@
 
                     &::before, &::after {
                         background-color: #ffc123;
-
                     } 
                 }
 
@@ -111,6 +110,13 @@
             &:hover {
                 cursor: pointer;
                 border: 3px solid #ffc123;
+                * {
+                    background-color: #ffc123;
+
+                    &::after, &::before{
+                        background-color: #ffc123;
+                    }
+                }
             }
     
     

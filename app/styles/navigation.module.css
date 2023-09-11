@@ -87,6 +87,12 @@
   cursor: pointer;
   border: 3px solid #ffc123;
 }
+.navigationContainer .navigationBar .menuBtnContainer:hover * {
+  background-color: #ffc123;
+}
+.navigationContainer .navigationBar .menuBtnContainer:hover *::after, .navigationContainer .navigationBar .menuBtnContainer:hover *::before {
+  background-color: #ffc123;
+}
 .navigationContainer .sidebar {
   transform: translateX(320px);
   z-index: 1000;
