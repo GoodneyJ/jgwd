@@ -2,6 +2,7 @@
 
 import {React, useRef, useState, useEffect} from 'react'
 import dynamic from 'next/dynamic';
+import { BiSolidChevronDown } from "react-icons/bi";
 
 import OfferCard from './OfferCard'
 
@@ -80,6 +81,7 @@ export default function About() {
       
       <h4 className={styles.reviewHeading}> Heres a few words from business owners like you </h4>
       {/* Font awesome down arrow here please */}
+      <BiSolidChevronDown className={styles.chevron}/>
     </div>
   )
 }
