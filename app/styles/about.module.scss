@@ -1,4 +1,4 @@
-@import './globals.css'
+@import './globals.css';
 
 
 /* animations */
@@ -59,9 +59,9 @@
         }
 
         .animTypewriter {
-            animation: typewriter 5s steps(40) 1s 1 normal both,
+            animation: typewriter 5.5s steps(40) 1s 1 normal both,
             blinkTextCursor 500ms steps(40) infinite normal,
-            typewriter 5s steps(40) 1s 1 reverse both;
+            typewriter 5.5s steps(40) 1s 1 reverse both;
             animation-iteration-count: infinite;
         }
 
