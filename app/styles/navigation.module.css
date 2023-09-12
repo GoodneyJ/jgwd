@@ -23,6 +23,7 @@
 .navigationContainer .navigationBar .logo:hover {
   color: #f8bc24;
   border: 2px solid #f8bc24;
+  filter: drop-shadow(0px 0px 10px #daa520);
 }
 .navigationContainer .navigationBar .spacer {
   display: flex;
@@ -76,6 +77,7 @@
 }
 .navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger:hover {
   background-color: #ffc123;
+  filter: drop-shadow(0px 0px 10px #daa520);
 }
 .navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger:hover::before, .navigationContainer .navigationBar .menuBtnContainer .menuBtnBurger:hover::after {
   background-color: #ffc123;
@@ -124,12 +126,14 @@
 .navigationContainer .sidebar .sidebarMenu a:hover {
   cursor: pointer;
   color: #daa520;
+  filter: drop-shadow(0px 0px 10px #daa520);
 }
 .navigationContainer .sidebar .sidebarMenu a:hover::after {
   content: "";
   background-color: #daa520;
-  height: 3px;
-  width: 35px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
   display: block;
 }
 .navigationContainer .sidebar.display {
