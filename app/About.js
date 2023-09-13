@@ -75,7 +75,9 @@ export default function About() {
       {/* Pricing Block */}
       <h4 className={styles.pricingSubheading}>Pricing</h4>
       <div className={styles.pricingBlock}>
-          <div className={styles.priceItem}></div>
+          <div className={styles.priceItem}>
+            
+          </div>
           <div className={styles.priceItem}></div>
       </div>
       

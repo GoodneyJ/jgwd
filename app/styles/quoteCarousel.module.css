@@ -1,5 +1,51 @@
 .quoteContainer {
-  height: 250px;
+  height: 350px;
   width: 100%;
   background-color: #131313;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quoteContainer .quoteWrapper {
+  width: 80%;
+  height: 250px;
+  position: absolute;
+}
+.quoteContainer .quoteWrapper .quoteSlide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.quoteContainer .quoteButtonRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.quoteContainer .quoteButtonRow .quoteButtonPrev, .quoteContainer .quoteButtonRow .quoteButtonNext {
+  font-size: 2rem;
+  color: #f8f8f8;
+  height: 40px;
+  width: 40px;
+  transition: 0.2s all ease;
+}
+.quoteContainer .quoteButtonRow .quoteButtonPrev:hover, .quoteContainer .quoteButtonRow .quoteButtonNext:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 10px #cea616);
+  color: #cea616;
+}
+.quoteContainer .quotePagination {
+  color: #f8f8f8;
+  border-radius: 50%;
+  border: #f8f8f8 solid 2px;
+  height: 25px;
+  width: 25px;
+  background-color: #f8f8f8;
+  transition: 0.3s all ease;
+  transform: translateY(100px);
+}
+.quoteContainer .quotePagination:hover {
+  border: #cea616 solid 2px;
 }/*# sourceMappingURL=quoteCarousel.module.css.map */
