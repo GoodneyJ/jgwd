@@ -1,20 +1,36 @@
 .quoteContainer {
-    height: 350px;
+    height: 450px;
     width: 100%;
     background-color: #131313;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    .quoteWrapper {
-        width: 80%;
-        height: 250px;
-        position: absolute;
 
-        .quoteSlide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+
+
+    
+    .quoteSlide {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #131313;
+        height: 400px;
+
+        .testimonialImage {
+            height: 35px;
+            width: 35px;
+            background-color: #f8f8f8;
+            border-radius: 50%;
+        }
+
+        .testimonialHeading {
+            margin: 1rem;
+        }
+
+        .testimonialText {
+            width: 80%;
         }
     }
 
