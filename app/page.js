@@ -16,7 +16,6 @@ export default function Home() {
       <Hero />
       <About />
       <QuoteCarousel />
-      <ImageCarousel />
       <Footer />
     </main>
   )

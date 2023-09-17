@@ -79,9 +79,9 @@ export default function Navigation() {
       <div className={styles.sidebar} ref={sidebarRef}>
         <nav className={styles.sidebarMenu}>
             <h4>MENU</h4>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">CONTACT</a>
+            <a href="#HOME">HOME</a>
+            <a href="#ABOUT">ABOUT</a>
+            <a href="#CONTACT">CONTACT</a>
         </nav>
 
         {/* <label for="menu-control" className={styles.sidebarClose}></label> */}

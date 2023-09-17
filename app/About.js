@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import { BiSolidChevronDown } from "react-icons/bi";
 
 import OfferCard from './OfferCard'
+import ImageCarousel from './ImageCarousel'
 
 import styles from '../app/styles/about.module.css'
 
@@ -58,7 +59,7 @@ export default function About() {
       {/* Services CTA */}
       <h5 className={styles.subHeading}>What I Offer</h5>
       <h3 className={styles.heading}>Key points of focus</h3>
-      <button className={styles.offerBtn}>Send me a message</button>
+
 
       {/* Services Block */}
       <div className={styles.offerBlock}>
@@ -70,6 +71,7 @@ export default function About() {
           <OfferCard title='Stability & Fast Load times'/>
           <OfferCard title='Stability & Fast Load times'/>
         </div>
+        <button className={styles.offerBtn}>Send me a message</button>
       </div>
 
       {/* Pricing Block */}
@@ -81,6 +83,9 @@ export default function About() {
           <div className={styles.priceItem}></div>
       </div>
       
+      {/* Image gallery */}
+      <ImageCarousel />
+
       <h4 className={styles.reviewHeading}> Heres a few words from business owners like you </h4>
       {/* Font awesome down arrow here please */}
       <BiSolidChevronDown className={styles.chevron}/>
