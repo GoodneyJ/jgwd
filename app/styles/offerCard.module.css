@@ -10,19 +10,15 @@
   width: 90%;
 }
 .cardContainer .cardIcon {
-  height: 50px;
-  width: 50px;
-  background-color: #0c0c0c;
-  border-radius: 50%;
-  margin: 0 0.5rem;
+  font-size: 3rem;
 }
 .cardContainer .cardInfo {
-  width: 90%;
+  width: 80%;
 }
 .cardContainer .cardInfo .cardTitle {
   margin: 0.75rem auto;
-  font-weight: 300;
-  font-size: 0.85rem;
+  font-weight: 600;
+  font-size: 1rem;
   text-transform: uppercase;
   text-align: center;
 }
@@ -36,6 +32,7 @@
 }
 .cardContainer .cardInfo .cardText {
   font-family: "EB Garamond";
-  width: 75%;
-  margin: 0.25rem auto;
+  width: 65%;
+  margin: 0.75rem auto;
+  font-weight: 300;
 }/*# sourceMappingURL=offerCard.module.css.map */

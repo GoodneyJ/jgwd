@@ -1,5 +1,96 @@
 .footerContainer {
-    height: 500px;
+    height: 700px;
     width: 100%;
     background-color: #0c0c0c;
+    padding-top: 5rem;
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+
+
+        .footerRow {
+            display: flex;
+            justify-content: center;
+            margin: 1rem auto;
+            width: 100%;
+
+            input[type=text], input[type=number] {
+                width: 35%;
+                height: 35px;
+                background-color: #cea616;
+                margin: 0 1rem;
+                outline: none;
+                border: none;
+                border-radius: 2px;
+                transition: .2s all ease;
+                &:focus {
+                    background-color: #ffbf00;
+
+                    border: 2px solid #f8bc24;
+                    filter: drop-shadow(0px 0px 10px #daa520);
+                }
+            }
+
+            input[type=checkbox] {
+                justify-content: left;
+                margin: 0 1rem;
+                height: 35px;
+                width: 35px;
+            
+            
+            }
+
+
+            input {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        
+        textarea {
+            height: 250px;
+            width: 75%;
+            background-color: #cea616;
+            outline: none;
+            border: none;
+            border-radius: 2px;
+            transition: .2s all ease;
+            &:focus {
+                background-color: #ffbf00;
+                border: 2px solid #f8bc24;
+                filter: drop-shadow(0px 0px 10px #daa520);
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .formSubmit {
+            background-image: linear-gradient(to left, #ffd65a ,#ffb700, #ffbf00);
+            background-size: 200%;
+            border: none;
+            width: 220px;
+            height: 45px;
+            margin: 1.5rem auto;
+            padding: 0 1rem;
+            color: #fff;
+            font-family: 'Montserrat';
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: all .2s ease-in-out;
+            box-shadow: 0px 3px 11px 3px #0000005b;
+            &:hover {
+                cursor: pointer;
+                background-position: right;
+                
+            }
+        }
+    }
 }

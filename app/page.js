@@ -11,7 +11,7 @@ import ImageCarousel from './ImageCarousel'
 
 export default function Home() {
   return (
-    <main className=''>
+    <main className='' style={{scrollBehavior:'smooth', transition:'0.2s all ease'}}>
       <Navigation />
       <Hero />
       <About />

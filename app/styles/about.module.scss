@@ -29,7 +29,7 @@
 // About Component
 .aboutContainer {
     width: 100%;
-    height: 2200px;
+    height: 3000px;
     display: flex;
     background-color: #f8f8f8;
     flex-direction: column;
@@ -146,12 +146,13 @@
 
     .pricingBlock {
         display: flex;
+        flex-direction: column;
 
         .priceItem {
             background-color: #0c0c0c;
             height: 650px;
-            width: 40%;
-            margin: 3rem auto;
+            width: 60%;
+            margin: 4rem auto;
             border-radius: 5px;
             -webkit-box-shadow: 3px 5px 21px 8px #000000; 
             box-shadow: 3px 5px 21px 8px #0000005b;
@@ -181,3 +182,5 @@
 
     }
 }
+
+

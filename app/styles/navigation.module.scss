@@ -1,6 +1,7 @@
 // Navigation
 
 .navigationContainer {
+
     .sticky {
 
     }
@@ -153,6 +154,8 @@
                 margin: 3rem auto;
                 font-size: 2rem;
                 transition: all 0.2s ease;
+                color: #f8f8f8;
+                text-decoration: none;
                 &:hover {
                     cursor: pointer;
                     color: #daa520;

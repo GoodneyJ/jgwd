@@ -16,7 +16,7 @@ export default function QuoteCarousel() {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      modules={[Navigation, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
       navigation = {{
@@ -24,9 +24,6 @@ export default function QuoteCarousel() {
         prevEl: styles.swiperBtnPrev
       }}
       pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
       className={styles.quoteContainer}
     >
         <SwiperSlide className={styles.quoteSlide}>

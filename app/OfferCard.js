@@ -2,10 +2,12 @@ import React from 'react'
 
 import styles from '../app/styles/offerCard.module.css'
 
+
+
 export default function OfferCard(props) {
   return (
     <div className={styles.cardContainer}>
-        <div className={styles.cardIcon}></div>
+        {props.icon}
         <div className={styles.cardInfo}>
             <h4 className={styles.cardTitle}>{props.title}</h4>
             <hr></hr>
