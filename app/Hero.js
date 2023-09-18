@@ -13,8 +13,8 @@ export default function Hero() {
             <p className={styles.contentText}>Affordable Web Development to suit the needs of you & your business</p>
 
             <div className={styles.buttonRow}>
-                <button>Learn More</button>
-                <button>Contact Me</button>
+                <a href="#PRICING" style={{textDecoration: 'none'}}><button>Learn More</button></a>
+                <a href="#CONTACT" style={{textDecoration: 'none'}}><button>Contact Me</button></a>
             </div>
         </div>
         

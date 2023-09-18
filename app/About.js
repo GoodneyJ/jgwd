@@ -9,6 +9,7 @@ import { SlScreenSmartphone } from 'react-icons/sl'
 
 import OfferCard from './OfferCard'
 import ImageCarousel from './ImageCarousel'
+import ImageGallery from './ImageGallery'
 
 import styles from '../app/styles/about.module.css'
 import cardStyles from '../app/styles/offerCard.module.css'
@@ -53,7 +54,7 @@ export default function About() {
   }
 
   return (
-    <div className={styles.aboutContainer}>
+    <div id='ABOUT' className={styles.aboutContainer}>
       {/* typewriter effect box */}
       <div id="liveTextContainer" className={styles.liveTextContainer}>
         <p className={`${styles.line} ${styles.animTypewriter}`} ref={liveTextRef}></p>;
@@ -73,11 +74,11 @@ export default function About() {
           <OfferCard title='Stability & Fast Load times' icon={<FaServer id="icon-three" className={cardStyles.cardIcon}/>}/>
           <OfferCard title='Stability & Fast Load times' icon={<FaRegClock  id="icon-four" className={cardStyles.cardIcon}/>}/>
         </div>
-        <button className={styles.offerBtn}>Send me a message</button>
+        <button className={styles.offerBtn}><a href="#CONTACT" style={{textDecoration: 'none', color: '#f8f8f8'}}>Send me a message</a></button>
       </div>
 
       {/* Pricing Block */}
-      <h4 className={styles.pricingSubheading}>Pricing</h4>
+      <h4 id="PRICING" className={styles.pricingSubheading}>Pricing</h4>
       <div className={styles.pricingBlock}>
           <div className={styles.priceItem}>
               <h4>Full Site $1500-3500</h4>
@@ -103,8 +104,7 @@ export default function About() {
       </div>
       
       {/* Image gallery */}
-      <ImageCarousel />
-
+      <ImageGallery />
       <h4 className={styles.reviewHeading}> Heres a few words from business owners like you </h4>
       {/* Font awesome down arrow here please */}
       <BiSolidChevronDown className={styles.chevron}/>

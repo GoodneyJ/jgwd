@@ -13,6 +13,9 @@ import 'swiper/scss/scrollbar';
 import styles from './styles/quoteCarousel.module.css'
 
 export default function QuoteCarousel() {
+
+
+
   return (
     <Swiper
       // install Swiper modules
@@ -27,22 +30,22 @@ export default function QuoteCarousel() {
       className={styles.quoteContainer}
     >
         <SwiperSlide className={styles.quoteSlide}>
-          <div className={styles.testimonialImage}></div>
+          
           <h4 className={styles.testimonialHeading}>Cost Care Health</h4>
           <p className={styles.testimonialText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repudiandae vero ullam explicabo, at tenetur nobis quos voluptates hic odio accusantium alias, libero accusamus. Rerum.</p>
         </SwiperSlide>
         <SwiperSlide className={styles.quoteSlide}>
-          <div className={styles.testimonialImage}></div>
+          
           <h4 className={styles.testimonialHeading}>Business 2</h4>
           <p className={styles.testimonialText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repudiandae vero ullam explicabo, at tenetur nobis quos voluptates hic odio accusantium alias, libero accusamus. Rerum.</p>
         </SwiperSlide>
         <SwiperSlide className={styles.quoteSlide}>
-          <div className={styles.testimonialImage}></div>
+          
           <h4 className={styles.testimonialHeading}>Business 3</h4>
           <p className={styles.testimonialText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repudiandae vero ullam explicabo, at tenetur nobis quos voluptates hic odio accusantium alias, libero accusamus. Rerum.</p>
         </SwiperSlide>
         <SwiperSlide className={styles.quoteSlide}>
-          <div className={styles.testimonialImage}></div>
+          
           <h4 className={styles.testimonialHeading}>Business 4</h4>
           <p className={styles.testimonialText}>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repudiandae vero ullam explicabo, at tenetur nobis quos voluptates hic odio accusantium alias, libero accusamus. Rerum.</p>
         </SwiperSlide>

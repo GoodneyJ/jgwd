@@ -20,7 +20,7 @@
 }
 .aboutContainer {
   width: 100%;
-  height: 3000px;
+  height: 3300px;
   display: flex;
   background-color: #f8f8f8;
   flex-direction: column;
@@ -116,12 +116,26 @@
   flex-direction: column;
 }
 .aboutContainer .pricingBlock .priceItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
   background-color: #0c0c0c;
   height: 650px;
   width: 60%;
   margin: 4rem auto;
   border-radius: 5px;
   box-shadow: 3px 5px 21px 8px rgba(0, 0, 0, 0.3568627451);
+}
+.aboutContainer .pricingBlock .priceItem ul {
+  text-align: justify;
+  margin: 0 auto;
+  width: 50%;
+  list-style-type: none;
+}
+.aboutContainer .pricingBlock .priceItem ul li {
+  margin: 1rem auto;
 }
 .aboutContainer .reviewHeading {
   font-family: "Montserrat";
@@ -131,6 +145,7 @@
   text-transform: uppercase;
   font-weight: 800;
   margin: 1rem auto;
+  margin-top: 6rem;
   letter-spacing: -1px;
   width: 80%;
 }

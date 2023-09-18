@@ -81,6 +81,8 @@ export default function Navigation() {
             <h4>MENU</h4>
             <a href="#HOME">HOME</a>
             <a href="#ABOUT">ABOUT</a>
+            <a href="#PRICING">PRICING</a>
+            <a href="#GALLERY">GALLERY</a>
             <a href="#CONTACT">CONTACT</a>
         </nav>
 
