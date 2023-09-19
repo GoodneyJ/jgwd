@@ -19,6 +19,8 @@
   letter-spacing: 5px;
   cursor: pointer;
   transition: 0.2s all ease;
+  text-decoration: none;
+  color: #f8f8f8;
 }
 .navigationContainer .navigationBar .logo:hover {
   color: #f8bc24;

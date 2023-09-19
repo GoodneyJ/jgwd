@@ -9,14 +9,14 @@ export default function ImageGallery() {
     <div id="GALLERY" className={styles.imageGallery}>
         <div className={styles.galleryRow}>
             <ImageIcon backgroundImage="Screenshot_1.png"/>
-            <ImageIcon backgroundImage="Screenshot_2.png"/>
+            <ImageIcon backgroundImage="Screenshot_3.png"/>
             
         </div>
         
 
         <div className={styles.galleryRow}>
-            <ImageIcon backgroundImage="restGif.gif"/>
-            <ImageIcon backgroundImage="carGif.gif"/>
+            <ImageIcon backgroundImage="Screenshot_2.png"/>
+            <ImageIcon backgroundImage="Screenshot_1.png"/>
         </div>
     </div>
   )

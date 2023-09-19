@@ -18,6 +18,7 @@
   width: 100%;
 }
 .footerContainer form .footerRow input[type=text], .footerContainer form .footerRow input[type=number] {
+  font-family: "Montserrat";
   width: 35%;
   height: 35px;
   background-color: #cea616;
@@ -26,6 +27,7 @@
   border: none;
   border-radius: 2px;
   transition: 0.2s all ease;
+  padding-left: 1rem;
 }
 .footerContainer form .footerRow input[type=text]:focus, .footerContainer form .footerRow input[type=number]:focus {
   background-color: #ffbf00;
@@ -42,13 +44,15 @@
   cursor: pointer;
 }
 .footerContainer form textarea {
+  font-family: "EB Garamond";
   height: 250px;
-  width: 75%;
+  width: 74%;
   background-color: #cea616;
   outline: none;
   border: none;
   border-radius: 2px;
   transition: 0.2s all ease;
+  padding: 1rem;
 }
 .footerContainer form textarea:focus {
   background-color: #ffbf00;
@@ -62,6 +66,7 @@
   background-image: linear-gradient(to left, #ffd65a, #ffb700, #ffbf00);
   background-size: 200%;
   border: none;
+  border-radius: 2px;
   width: 220px;
   height: 45px;
   margin: 1.5rem auto;

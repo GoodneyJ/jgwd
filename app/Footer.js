@@ -7,18 +7,15 @@ export default function Footer() {
     <div id="CONTACT" className={styles.footerContainer}>
         <form>
           <div className={styles.footerRow}>
-            <input name='name' type='text' placeholder=''/>
-            <input name='email' type='text' placeholder=''/>
+            <input name='name' placeholder='John Smith' type='text'/>
+            <input name='email' placeholder='JohnSmith@email.com' type='text'/>
           </div>
           <div className={styles.footerRow}>
-            <input name='budget' type="number" />
-            <input name='phone-number' type='text'/>
+            <input name='budget' placeholder='$1500' type="text" />
+            <input name='phone-number' placeholder='(123)-456-7890' type='text'/>
           </div>
-          <div className={styles.footerRow}>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input>
-            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></input>
-          </div>
-          <textarea />
+
+          <textarea placeholder={`In a few words tell me a about you and your business, things you'd like to see on your site. Ex. Color pallette, Night Mode, etc `}/>
           <input type="button" value="Submit" className={styles.formSubmit}/>
         </form>
         

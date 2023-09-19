@@ -10,7 +10,10 @@
         justify-content: center;
         align-items: center;
 
+        #checkRow {
+            
 
+        }
 
         .footerRow {
             display: flex;
@@ -19,6 +22,7 @@
             width: 100%;
 
             input[type=text], input[type=number] {
+                font-family: 'Montserrat';
                 width: 35%;
                 height: 35px;
                 background-color: #cea616;
@@ -27,6 +31,7 @@
                 border: none;
                 border-radius: 2px;
                 transition: .2s all ease;
+                padding-left: 1rem;
                 &:focus {
                     background-color: #ffbf00;
 
@@ -54,13 +59,15 @@
 
         
         textarea {
+            font-family: 'EB Garamond';
             height: 250px;
-            width: 75%;
+            width: 74%;
             background-color: #cea616;
             outline: none;
             border: none;
             border-radius: 2px;
             transition: .2s all ease;
+            padding: 1rem;
             &:focus {
                 background-color: #ffbf00;
                 border: 2px solid #f8bc24;
@@ -76,6 +83,7 @@
             background-image: linear-gradient(to left, #ffd65a ,#ffb700, #ffbf00);
             background-size: 200%;
             border: none;
+            border-radius: 2px;
             width: 220px;
             height: 45px;
             margin: 1.5rem auto;

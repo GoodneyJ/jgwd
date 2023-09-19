@@ -29,6 +29,8 @@
             letter-spacing: 5px;
             cursor: pointer;
             transition: .2s all ease;
+            text-decoration: none;
+            color: #f8f8f8;
             &:hover {
                 color: #f8bc24;
                 border: 2px solid #f8bc24;

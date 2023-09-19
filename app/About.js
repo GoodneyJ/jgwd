@@ -8,7 +8,6 @@ import { DiResponsive } from 'react-icons/di'
 import { SlScreenSmartphone } from 'react-icons/sl'
 
 import OfferCard from './OfferCard'
-import ImageCarousel from './ImageCarousel'
 import ImageGallery from './ImageGallery'
 
 import styles from '../app/styles/about.module.css'
@@ -78,8 +77,9 @@ export default function About() {
       </div>
 
       {/* Pricing Block */}
-      <h4 id="PRICING" className={styles.pricingSubheading}>Pricing</h4>
+      
       <div className={styles.pricingBlock}>
+      <h4 id="PRICING" className={styles.pricingSubheading}>Pricing</h4>
           <div className={styles.priceItem}>
               <h4>Full Site $1500-3500</h4>
               <ul>
@@ -87,19 +87,17 @@ export default function About() {
                 <li>SEO, Page optimization, off page promotions</li>
                 <li>QA and performance tests</li>
                 <li>Professional Copywriting or provide your own</li>
-                <li>responsive designs & develoopment</li>
+                <li>responsive designs & development</li>
                 <li>Analytics & Tracking</li>
               </ul>
           </div>
           <div className={styles.priceItem}>
-            <h4>$150-$250 p/Month with a 6 month minimum</h4>
+            <h4>Subscription Based</h4>
               <ul>
                 <li> 4 hours of development for those who require frequent changes</li>
                 <li> dedicated & ongoing support & performance monitoring</li>
                 <li> Hosting & Backups to ensure 24/7 uptime</li>
-
               </ul>
-
           </div>
       </div>
       

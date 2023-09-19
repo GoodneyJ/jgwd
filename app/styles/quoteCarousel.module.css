@@ -24,8 +24,21 @@
 .quoteContainer .quoteSlide .testimonialHeading {
   margin: 1rem;
 }
+@media screen and (min-width: 750px) {
+  .quoteContainer .quoteSlide .testimonialHeading {
+    font-size: 1.25rem;
+  }
+}
 .quoteContainer .quoteSlide .testimonialText {
-  width: 80%;
+  width: 60%;
+  font-size: 0.85rem;
+  font-family: "eb garamond";
+}
+@media screen and (min-width: 750px) {
+  .quoteContainer .quoteSlide .testimonialText {
+    width: 70%;
+    font-size: 1rem;
+  }
 }
 .quoteContainer .quoteButtonRow {
   display: flex;

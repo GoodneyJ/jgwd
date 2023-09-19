@@ -1,7 +1,7 @@
 'use client'
 
 import React, {useEffect, useState, useRef, forwardRef} from 'react'
-import { IconContext } from "react-icons";
+
 import { HiMiniMoon } from 'react-icons/hi2'
 
 import styles from './styles/navigation.module.css'
@@ -61,7 +61,7 @@ export default function Navigation() {
 
       {/* Navigation bar */}
       <div className={styles.navigationBar} ref={navRef}>
-        <h2 className={styles.logo}>JGWD</h2>
+        <a href='#HOME'><h2 className={styles.logo}>JGWD</h2></a>
       
         {/* menuRef reference source */}
           <div className={styles.spacer}>

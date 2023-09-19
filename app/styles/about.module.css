@@ -20,10 +20,15 @@
 }
 .aboutContainer {
   width: 100%;
-  height: 3300px;
+  height: 475vh;
   display: flex;
   background-color: #f8f8f8;
   flex-direction: column;
+}
+@media screen and (min-width: 752px) {
+  .aboutContainer {
+    height: 3650px;
+  }
 }
 .aboutContainer .liveTextContainer {
   height: 150px;
@@ -70,6 +75,7 @@
   font-weight: 600;
   font-size: 1.5rem;
   color: #0c0c0c;
+  margin: 1rem;
 }
 .aboutContainer .offerBtn {
   background-image: linear-gradient(to left, #ffd65a, #ffb700, #ffbf00);
@@ -77,7 +83,7 @@
   border: none;
   width: 220px;
   height: 45px;
-  margin: 1.5rem auto;
+  margin: 2.5rem auto;
   padding: 0 1rem;
   color: #fff;
   font-family: "Montserrat";
@@ -101,37 +107,43 @@
   margin: 0 auto;
   justify-content: space-evenly;
 }
-.aboutContainer .pricingSubheading {
-  font-family: "Montserrat";
-  text-align: center;
-  color: #daa520;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 800;
-  margin: 0.25rem auto;
-  letter-spacing: -1px;
-}
 .aboutContainer .pricingBlock {
   display: flex;
   flex-direction: column;
 }
-.aboutContainer .pricingBlock .priceItem {
+.aboutContainer .pricingBlock .pricingSubheading {
+  font-family: "Montserrat";
+  text-align: center;
+  color: #daa520;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  font-weight: 800;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0.25rem auto;
+  transform: translateY(25px);
+  letter-spacing: -1px;
+}
+.aboutContainer .pricingBlock .priceItem {
+  display: flex;
   flex-direction: column;
   text-align: center;
   background-color: #0c0c0c;
   height: 650px;
-  width: 60%;
+  width: 80%;
   margin: 4rem auto;
   border-radius: 5px;
   box-shadow: 3px 5px 21px 8px rgba(0, 0, 0, 0.3568627451);
 }
+.aboutContainer .pricingBlock .priceItem h4 {
+  font-size: 1.5rem;
+  margin: 2rem auto;
+}
 .aboutContainer .pricingBlock .priceItem ul {
-  text-align: justify;
+  text-align: left;
   margin: 0 auto;
-  width: 50%;
+  width: 70%;
   list-style-type: none;
 }
 .aboutContainer .pricingBlock .priceItem ul li {
@@ -145,7 +157,6 @@
   text-transform: uppercase;
   font-weight: 800;
   margin: 1rem auto;
-  margin-top: 6rem;
   letter-spacing: -1px;
   width: 80%;
 }
@@ -157,4 +168,12 @@
   width: 75px;
   height: 75px;
   margin: 0 auto;
+}
+.aboutContainer .reviewHeading, .aboutContainer .chevron {
+  transform: translateY(50px);
+}
+@media screen and (min-width: 750px) {
+  .aboutContainer .reviewHeading, .aboutContainer .chevron {
+    transform: translateY(75px);
+  }
 }/*# sourceMappingURL=about.module.css.map */

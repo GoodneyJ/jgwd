@@ -8,7 +8,9 @@ export default function ImageIcon(props) {
 
     const varStyles = {
         backgroundImage: `url(${props.backgroundImage})`,
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+
     }
 
   return (
