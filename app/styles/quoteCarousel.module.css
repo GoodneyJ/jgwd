@@ -26,7 +26,7 @@
 }
 @media screen and (min-width: 750px) {
   .quoteContainer .quoteSlide .testimonialHeading {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 .quoteContainer .quoteSlide .testimonialText {
@@ -38,6 +38,11 @@
   .quoteContainer .quoteSlide .testimonialText {
     width: 70%;
     font-size: 1rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .quoteContainer .quoteSlide .testimonialText {
+    font-size: 1.25rem;
   }
 }
 .quoteContainer .quoteButtonRow {

@@ -7,7 +7,9 @@
 .footerContainer form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
@@ -16,13 +18,13 @@
   justify-content: center;
   margin: 1rem auto;
   width: 100%;
+  justify-content: space-between;
 }
 .footerContainer form .footerRow input[type=text], .footerContainer form .footerRow input[type=number] {
   font-family: "Montserrat";
-  width: 35%;
+  width: 45%;
   height: 35px;
   background-color: #cea616;
-  margin: 0 1rem;
   outline: none;
   border: none;
   border-radius: 2px;
@@ -46,13 +48,14 @@
 .footerContainer form textarea {
   font-family: "EB Garamond";
   height: 250px;
-  width: 74%;
+  width: 100%;
   background-color: #cea616;
   outline: none;
   border: none;
   border-radius: 2px;
   transition: 0.2s all ease;
   padding: 1rem;
+  color: #ffffff;
 }
 .footerContainer form textarea:focus {
   background-color: #ffbf00;

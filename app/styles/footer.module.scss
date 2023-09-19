@@ -6,9 +6,12 @@
     form {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 70%;
+        max-width: 500px;
+        margin: 0 auto;
         justify-content: center;
         align-items: center;
+
 
         #checkRow {
             
@@ -20,13 +23,13 @@
             justify-content: center;
             margin: 1rem auto;
             width: 100%;
-
+            justify-content: space-between;
             input[type=text], input[type=number] {
                 font-family: 'Montserrat';
-                width: 35%;
+                width: 45%;
                 height: 35px;
                 background-color: #cea616;
-                margin: 0 1rem;
+
                 outline: none;
                 border: none;
                 border-radius: 2px;
@@ -34,7 +37,6 @@
                 padding-left: 1rem;
                 &:focus {
                     background-color: #ffbf00;
-
                     border: 2px solid #f8bc24;
                     filter: drop-shadow(0px 0px 10px #daa520);
                 }
@@ -45,10 +47,8 @@
                 margin: 0 1rem;
                 height: 35px;
                 width: 35px;
-            
-            
+                
             }
-
 
             input {
                 &:hover {
@@ -61,13 +61,14 @@
         textarea {
             font-family: 'EB Garamond';
             height: 250px;
-            width: 74%;
+            width: 100%;
             background-color: #cea616;
             outline: none;
             border: none;
             border-radius: 2px;
             transition: .2s all ease;
             padding: 1rem;
+            color: #ffffff;
             &:focus {
                 background-color: #ffbf00;
                 border: 2px solid #f8bc24;

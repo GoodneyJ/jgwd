@@ -56,7 +56,7 @@ export default function About() {
     <div id='ABOUT' className={styles.aboutContainer}>
       {/* typewriter effect box */}
       <div id="liveTextContainer" className={styles.liveTextContainer}>
-        <p className={`${styles.line} ${styles.animTypewriter}`} ref={liveTextRef}></p>;
+        <p className={`${styles.line} ${styles.animTypewriter}`} ref={liveTextRef}></p>
       </div>
 
       {/* Services CTA */}
