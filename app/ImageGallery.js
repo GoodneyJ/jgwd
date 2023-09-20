@@ -18,13 +18,13 @@ export default function ImageGallery() {
   return (
     <div id="GALLERY" className={styles.imageGallery}>
         <div className={styles.galleryRow}>
-            <ImageIcon id='/CCHI.png' backgroundImage="Screenshot_1.png" onClick={handleClick}/>
-            <ImageIcon id='/Screenshot_3.png' backgroundImage="Screenshot_3.png" onClick={handleClick}/>
+            <ImageIcon id='/cchi.mp4' backgroundImage="Screenshot_1.png" onClick={handleClick}/>
+            <ImageIcon id='/portfolio.mp4' backgroundImage="Screenshot_3.png" onClick={handleClick}/>
             
         </div>
         
         <div className={styles.galleryRow}>
-            <ImageIcon id='/vgsGif.gif' backgroundImage="Screenshot_2.png" onClick={handleClick}/>
+            <ImageIcon id='/vgs.mp4' backgroundImage="Screenshot_2.png" onClick={handleClick}/>
             <ImageIcon id='/Screenshot_1.png' backgroundImage="Screenshot_1.png" onClick={handleClick}/>
         </div>
 

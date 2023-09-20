@@ -13,6 +13,14 @@
   justify-content: center;
   align-items: center;
 }
+.footerContainer form ::-moz-placeholder {
+  color: white;
+  opacity: 1;
+}
+.footerContainer form ::placeholder {
+  color: white;
+  opacity: 1;
+}
 .footerContainer form .footerRow {
   display: flex;
   justify-content: center;
@@ -32,7 +40,6 @@
   padding-left: 1rem;
 }
 .footerContainer form .footerRow input[type=text]:focus, .footerContainer form .footerRow input[type=number]:focus {
-  background-color: #ffbf00;
   border: 2px solid #f8bc24;
   filter: drop-shadow(0px 0px 10px #daa520);
 }
