@@ -12,9 +12,10 @@ export default function ImageIcon(props) {
         backgroundPosition: 'center'
 
     }
+    
 
   return (
-    <div style={varStyles} className={`${styles.iconContainer} inlineContainer`}>
+    <div id={props.id} style={varStyles} className={`${styles.iconContainer} inlineContainer`} onClick={props.onClick}>
 
     </div>
   )
