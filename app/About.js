@@ -68,14 +68,15 @@ export default function About() {
         <div className={styles.offerRow}>
           <OfferCard title='24/7 Support' icon={<FaWrench id="icon-one" className={cardStyles.cardIcon}/>}/>
           <OfferCard title='Responsive Design' icon={<SlScreenSmartphone  id="icon-two" className={cardStyles.cardIcon}/>}/>
-        </div>
-        <div className={styles.offerRow}>
           <OfferCard title='Stability & Fast Load times' icon={<FaServer id="icon-three" className={cardStyles.cardIcon}/>}/>
           <OfferCard title='Stability & Fast Load times' icon={<FaRegClock  id="icon-four" className={cardStyles.cardIcon}/>}/>
         </div>
-        <button className={styles.offerBtn}><a href="#CONTACT" style={{textDecoration: 'none', color: '#f8f8f8'}}>Send me a message</a></button>
-      </div>
+        <div className={styles.offerRow}>
 
+        </div>
+        
+      </div>
+      <button className={styles.offerBtn}><a href="#CONTACT" style={{textDecoration: 'none', color: '#f8f8f8'}}>Send me a message</a></button>
       {/* Pricing Block */}
       
       <div className={styles.pricingBlock}>

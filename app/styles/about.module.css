@@ -20,14 +20,14 @@
 }
 .aboutContainer {
   width: 100%;
-  height: 4000px;
+  height: 4250px;
   display: flex;
   background-color: #f8f8f8;
   flex-direction: column;
 }
 @media screen and (min-width: 752px) {
   .aboutContainer {
-    height: 3200px;
+    height: 3050px;
   }
 }
 .aboutContainer .liveTextContainer {
@@ -68,19 +68,20 @@
   font-family: "Montserrat";
   text-align: center;
   color: #daa520;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   font-weight: 800;
   margin: 0.25rem auto;
-  letter-spacing: -1px;
+  margin-top: 2rem;
+  letter-spacing: 0.25px;
 }
 .aboutContainer .heading {
   text-align: center;
   font-family: "Montserrat";
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: #0c0c0c;
-  margin: 1rem;
+  margin-bottom: 1rem;
 }
 .aboutContainer .offerBtn {
   background-image: linear-gradient(to left, #ffd65a, #ffb700, #ffbf00);
@@ -103,14 +104,19 @@
 }
 .aboutContainer .offerBlock {
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 .aboutContainer .offerBlock .offerRow {
   display: flex;
+  flex-direction: column;
   margin: 0 auto;
   justify-content: space-evenly;
+}
+@media screen and (min-width: 850px) {
+  .aboutContainer .offerBlock .offerRow {
+    flex-direction: row;
+  }
 }
 .aboutContainer .pricingBlock {
   display: flex;
@@ -158,6 +164,8 @@
 }
 .aboutContainer .pricingBlock .priceItem ul li {
   margin: 1rem auto;
+  font-weight: 100;
+  font-size: 1.25rem;
 }
 .aboutContainer .reviewHeading {
   font-family: "Montserrat";

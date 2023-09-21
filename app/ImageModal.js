@@ -22,11 +22,11 @@ export default function ImageModal(props) {
     }   
 
   return (
-    <div className={styles.modalWrapper} onClick={props.onClick} ref={modalRef}>
+    <div className={styles.modalWrapper} ref={modalRef}>
         <div className={styles.imageModal} style={inlineStyles}>
         <video fill src={props.selector} controls />
 
-           <GrFormClose className={styles.closeImageModal} style={{color: 'white'}}/>
+           <GrFormClose className={styles.closeImageModal} style={{color: 'white'}} onClick={props.onClick}/>
         </div>
     </div>
   )

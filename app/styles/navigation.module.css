@@ -13,7 +13,10 @@
   top: 0; /* Position the navbar at the top of the page */
   width: 100%;
 }
-.navigationContainer .navigationBar .logo {
+.navigationContainer .navigationBar a {
+  text-decoration: none;
+}
+.navigationContainer .navigationBar a .logo {
   border: 2px solid #fff;
   padding: 0rem 1rem;
   letter-spacing: 5px;
@@ -22,7 +25,7 @@
   text-decoration: none;
   color: #f8f8f8;
 }
-.navigationContainer .navigationBar .logo:hover {
+.navigationContainer .navigationBar a .logo:hover {
   color: #f8bc24;
   border: 2px solid #f8bc24;
   filter: drop-shadow(0px 0px 10px #daa520);
