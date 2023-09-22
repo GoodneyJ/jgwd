@@ -25,7 +25,7 @@
   background-color: #f8f8f8;
   flex-direction: column;
 }
-@media screen and (min-width: 752px) {
+@media screen and (min-width: 800px) {
   .aboutContainer {
     height: 3050px;
   }
@@ -43,7 +43,7 @@
   justify-content: center;
   align-items: center;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 800px) {
   .aboutContainer .liveTextContainer {
     width: 50%;
   }

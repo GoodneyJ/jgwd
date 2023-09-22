@@ -28,7 +28,7 @@
 
 // About Component
 .aboutContainer {
-    @media screen and (min-width: 752px) {
+    @media screen and (min-width: 800px) {
         height: 3050px;
     }
 
@@ -39,7 +39,7 @@
     flex-direction: column;
 
     .liveTextContainer {
-        @media screen and (min-width: 750px) {
+        @media screen and (min-width: 800px) {
             width: 50%;
         }
         height: 150px;

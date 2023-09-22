@@ -15,48 +15,38 @@ import cardStyles from '../app/styles/offerCard.module.css'
 export default function About() {
   const [lineArray, setLineArray] = useState(["This is <span>Line 1</span>", "This is <span>Line 2</span>", "This is <span>Line 3</span>"]);
   const [longShort, setLongShort] = useState(true);
+  const [arrTicker, setArrTicker] = useState(null);
+  // const [curIndex, setCurIndex] = useState(0)
   const liveTextRef = useRef();
-
+  let curIndex = -1;
   useEffect(() => {
-    async function liveTextMarquee(i) {
-      if(i > 0) {
-          liveTextRef.current.innerHTML = "";
-          // liveTextElement.innerText = lineArray[i];
-          liveTextRef.current.innerHTML = lineArray[i];  
-      } else {
-          liveTextRef.current.innerHTML = lineArray[i];
+
+
+
+    function liveTextMarquee() {
+    // setCurIndex(curIndex + 1);
+      curIndex++;
+      if (curIndex >= 3) {
+        // setCurIndex(0);
+        curIndex = 0;
       }
-      // console.log(liveTextRef.current.innerHTML.length)
-      // if(liveTextRef.current.innerHTML.length > 30) {
-      //   setLongShort(true);   
-      // }
-      // setLongShort(false);
+
+
+
+      liveTextRef ? liveTextRef.current.innerHTML = lineArray[curIndex] : '';
+      setArrTicker(lineArray[curIndex]);
+      
     }
 
-    async function init() {
-      for(let i = 0; i < lineArray.length; i++) {
-          liveTextMarquee(i)
-          // if(longShort) {
-          await sleep(5500);
-          // }
-          // else {
-          //   await sleep(5000);
-          // }
-      }
-      init();
-    }
-    init();
-  }, [])
+    var intervalID = setInterval(liveTextMarquee, 5000)
 
-  function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-  }
+  }, [lineArray, curIndex, liveTextRef])
 
   return (
     <div id='ABOUT' className={styles.aboutContainer}>
       {/* typewriter effect box */}
       <div id="liveTextContainer" className={styles.liveTextContainer}>
-        <p className={`${styles.line} ${styles.animTypewriter}`} ref={liveTextRef}></p>
+        <p className={`${styles.line} ${styles.animTypewriter}`} ref={liveTextRef}>.........</p>
       </div>
 
       {/* Services CTA */}
