@@ -44,6 +44,11 @@
                     border: 2px solid #f8bc24;
                     filter: drop-shadow(0px 0px 10px #daa520);
                 }
+
+                &:hover {
+                    border: 2px solid #f8bc24;
+
+                }
             }
 
             input[type=checkbox] {
@@ -81,6 +86,7 @@
 
             &:hover {
                 cursor: pointer;
+                border: 2px solid #f8bc24;
             }
         }
 
@@ -102,7 +108,8 @@
             &:hover {
                 cursor: pointer;
                 background-position: right;
-                
+
+                filter: drop-shadow(0px 0px 10px #daa52098);
             }
         }
     }

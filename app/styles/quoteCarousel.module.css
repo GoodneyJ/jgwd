@@ -30,6 +30,7 @@
   }
 }
 .quoteContainer .quoteSlide .testimonialText {
+  text-align: center;
   width: 60%;
   font-size: 0.85rem;
   font-family: "eb garamond";

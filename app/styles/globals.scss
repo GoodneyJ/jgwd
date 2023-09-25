@@ -3,6 +3,27 @@
 
 
 
+    .swiper-button-prev, .swiper-button-next {
+      color: #cea616;
+      transition: .2s all ease;
+      &:hover {
+        color: #f8bc24;
+        filter: drop-shadow(0px 0px 10px #daa520);
+
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: #cea616;
+      transition: 0.2s ease all;
+
+      &:hover {
+        color: #f8bc24;
+        border: solid 1px #daa520;
+        filter: drop-shadow(0px 0px 10px #f8bc24);
+      }
+    }
+
   }
     
   html {

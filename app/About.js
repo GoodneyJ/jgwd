@@ -61,9 +61,7 @@ export default function About() {
           <OfferCard title='Stability & Fast Load times' icon={<FaServer id="icon-three" className={cardStyles.cardIcon}/>}/>
           <OfferCard title='Stability & Fast Load times' icon={<FaRegClock  id="icon-four" className={cardStyles.cardIcon}/>}/>
         </div>
-        <div className={styles.offerRow}>
 
-        </div>
         
       </div>
       <button className={styles.offerBtn}><a href="#CONTACT" style={{textDecoration: 'none', color: '#f8f8f8'}}>Send me a message</a></button>

@@ -43,6 +43,9 @@
   border: 2px solid #f8bc24;
   filter: drop-shadow(0px 0px 10px #daa520);
 }
+.footerContainer form .footerRow input[type=text]:hover, .footerContainer form .footerRow input[type=number]:hover {
+  border: 2px solid #f8bc24;
+}
 .footerContainer form .footerRow input[type=checkbox] {
   justify-content: left;
   margin: 0 1rem;
@@ -71,6 +74,7 @@
 }
 .footerContainer form textarea:hover {
   cursor: pointer;
+  border: 2px solid #f8bc24;
 }
 .footerContainer form .formSubmit {
   background-image: linear-gradient(to left, #ffd65a, #ffb700, #ffbf00);
@@ -91,4 +95,5 @@
 .footerContainer form .formSubmit:hover {
   cursor: pointer;
   background-position: right;
+  filter: drop-shadow(0px 0px 10px rgba(218, 165, 32, 0.5960784314));
 }/*# sourceMappingURL=footer.module.css.map */
