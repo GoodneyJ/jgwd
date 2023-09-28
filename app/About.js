@@ -13,7 +13,7 @@ import ImageGallery from './ImageGallery'
 import styles from '../app/styles/about.module.css'
 import cardStyles from '../app/styles/offerCard.module.css'
 export default function About() {
-  const [lineArray, setLineArray] = useState(["This is <span>Line 1</span>", "This is <span>Line 2</span>", "This is <span>Line 3</span>"]);
+  const [lineArray, setLineArray] = useState(["Welcome to my site", "Got Questions? Send me a message!", "Support for you and your business"]);
   const [longShort, setLongShort] = useState(true);
   const [arrTicker, setArrTicker] = useState(null);
   // const [curIndex, setCurIndex] = useState(0)
@@ -46,7 +46,7 @@ export default function About() {
     <div id='ABOUT' className={styles.aboutContainer}>
       {/* typewriter effect box */}
       <div id="liveTextContainer" className={styles.liveTextContainer}>
-        <p className={`${styles.line} ${styles.animTypewriter}`} ref={liveTextRef}>.........</p>
+        <p className={`${styles.line} ${styles.animTypewriter}`} ref={liveTextRef}>Hey my name is Jarrod!</p>
       </div>
 
       {/* Services CTA */}
@@ -56,10 +56,10 @@ export default function About() {
       {/* Services Block */}
       <div className={styles.offerBlock}>
         <div className={styles.offerRow}>
-          <OfferCard title='24/7 Support' icon={<FaWrench id="icon-one" className={cardStyles.cardIcon}/>}/>
-          <OfferCard title='Responsive Design' icon={<SlScreenSmartphone  id="icon-two" className={cardStyles.cardIcon}/>}/>
-          <OfferCard title='Stability & Fast Load times' icon={<FaServer id="icon-three" className={cardStyles.cardIcon}/>}/>
-          <OfferCard title='Stability & Fast Load times' icon={<FaRegClock  id="icon-four" className={cardStyles.cardIcon}/>}/>
+          <OfferCard title='24/7 Support' icon={<FaWrench id="icon-one" className={cardStyles.cardIcon}/>} cardText={`You can text me & email me when you need me Once I do this full time you'll be able to call me as well!`}/>
+          <OfferCard title='Responsive Design' icon={<SlScreenSmartphone  id="icon-two" className={cardStyles.cardIcon}/>} cardText={`Whether its your design or mine I'll make it look great on almost every screen available`}/>
+          <OfferCard title='Stable & Secure' icon={<FaServer id="icon-three" className={cardStyles.cardIcon} />} cardText={`I use reliable & secure providers that allow analytics and performance stats that can load new builds of the site in seconds`}/>
+          <OfferCard title='Ranked SEO' icon={<FaRegClock  id="icon-four" className={cardStyles.cardIcon} />} cardText={`Using various strategies to hydrate your site with good SEO over time to get your site ranked on google the right way`}/>
         </div>
 
         
@@ -70,24 +70,28 @@ export default function About() {
       <div className={styles.pricingBlock}>
       <h4 id="PRICING" className={styles.pricingSubheading}>Pricing</h4>
           <div className={styles.priceItem}>
-              <h4>Full Site $1500-3500</h4>
+              <h4>Single Payment of $1650</h4>
+              <p className={styles.itemSubheading}>Will host for $25 per month</p>
               <ul>
                 <li>Half now Half upon completion</li>
-                <li>SEO, Page optimization, off page promotions</li>
-                <li>QA and performance tests</li>
-                <li>Professional Copywriting or provide your own</li>
-                <li>responsive designs & development</li>
-                <li>Analytics & Tracking</li>
+                <li>Basic SEO</li>
+                <li>QA and Testing</li>
+                <li>Professional Copywriting (Or provide your own)</li>
+                <li>Designs are responsive!</li>
+
               </ul>
           </div>
           <div className={styles.priceItem}>
             <h4>Subscription Based</h4>
+            <p className={styles.itemSubheading}>$150 Per Month if you have a design you want me to use</p>
+            <p className={styles.itemSubheading}>$200 Per Month if you'd rather me create a design from scratch</p>
               <ul>
                 <li> 4 hours of development for those who require frequent changes</li>
                 <li> dedicated & ongoing support & performance monitoring</li>
                 <li> Hosting & Backups to ensure 24/7 uptime</li>
               </ul>
           </div>
+          <p>Subscriptions start as a 6-Month minimum, but becomes monthly after that period ends.</p>
       </div>
       
       {/* Image gallery */}

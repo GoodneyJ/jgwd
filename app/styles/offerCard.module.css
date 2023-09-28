@@ -1,6 +1,5 @@
 .cardContainer {
   color: #daa520;
-  margin: 3.5rem auto;
   font-family: "Montserrat";
   display: flex;
   flex-direction: column;
@@ -8,19 +7,34 @@
   border-radius: 3px;
   align-items: center;
   width: 90%;
+  height: 350px;
+}
+@media screen and (min-width: 750px) {
+  .cardContainer {
+    height: 40vh;
+  }
 }
 .cardContainer .cardIcon {
   font-size: 3rem;
 }
 .cardContainer .cardInfo {
   width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 750px) {
+  .cardContainer .cardInfo {
+    height: 20vh;
+  }
 }
 .cardContainer .cardInfo .cardTitle {
   margin: 0.75rem auto;
-  font-weight: 400;
-  font-size: 1rem;
+  font-weight: 500;
   text-transform: uppercase;
   text-align: center;
+  font-size: 1.25rem;
 }
 .cardContainer .cardInfo hr {
   height: 3px;
@@ -31,8 +45,11 @@
   margin: 0 auto;
 }
 .cardContainer .cardInfo .cardText {
+  text-align: justify;
   font-family: "EB Garamond";
-  width: 65%;
+  width: 95%;
   margin: 0.75rem auto;
   font-weight: 300;
+  height: 50px;
+  font-size: 1.15rem;
 }/*# sourceMappingURL=offerCard.module.css.map */

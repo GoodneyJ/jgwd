@@ -11,7 +11,7 @@ export default function OfferCard(props) {
         <div className={styles.cardInfo}>
             <h4 className={styles.cardTitle}>{props.title}</h4>
             <hr></hr>
-            <p className={styles.cardText}>Lorem ipsum dolor sit amet concateur un ricko La trube traviata non troppo bootstrap responsive themes. website design website templates.</p>
+            <p className={styles.cardText}>{props.cardText}</p>
         </div>
     </div>
   )
