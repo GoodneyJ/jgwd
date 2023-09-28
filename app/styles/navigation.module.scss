@@ -34,6 +34,7 @@
                 text-decoration: none;
                 
                 color: #f8f8f8;
+                will-change: color, border, filter;
                 &:hover {
                     color: #f8bc24;
                     border: 2px solid #f8bc24;
@@ -143,7 +144,7 @@
         display: flex;
         right: 0px;
         transition: all 0.3s ease;
-
+        will-change: transform, display;
         .sidebarMenu {
             display: flex;
             flex-direction: column;
@@ -163,6 +164,7 @@
                 transition: all 0.2s ease;
                 color: #f8f8f8;
                 text-decoration: none;
+                will-change: color, filter;
                 &:hover {
                     cursor: pointer;
                     color: #daa520;

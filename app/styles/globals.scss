@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&family=Inter:wght@400;600;800&family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap');
 :root {
 
 
@@ -11,6 +11,7 @@
         filter: drop-shadow(0px 0px 10px #daa520);
 
       }
+      will-change: auto;
     }
 
     .swiper-pagination-bullet {

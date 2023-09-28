@@ -24,6 +24,7 @@
   transition: 0.2s all ease;
   text-decoration: none;
   color: #f8f8f8;
+  will-change: color, border, filter;
 }
 .navigationContainer .navigationBar a .logo:hover {
   color: #f8bc24;
@@ -111,6 +112,7 @@
   display: flex;
   right: 0px;
   transition: all 0.3s ease;
+  will-change: transform, display;
 }
 .navigationContainer .sidebar .sidebarMenu {
   display: flex;
@@ -130,6 +132,7 @@
   transition: all 0.2s ease;
   color: #f8f8f8;
   text-decoration: none;
+  will-change: color, filter;
 }
 .navigationContainer .sidebar .sidebarMenu a:hover {
   cursor: pointer;
